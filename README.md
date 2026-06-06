@@ -16,5 +16,5 @@ For now, search for "FIXME" if you want to see these changes/workarounds
    c) Select 2.02  
    d) Select 2.02.26  
    e) Download the one that says for 5.4  
-   f) Extract into `G1R\Plugins\`  
+   f) Extract into `G1R\Plugins\` (or `Plugins` relative to this repo structure)  
 4. Build the UE game project  
