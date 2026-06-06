@@ -18,3 +18,9 @@ For now, search for "FIXME" if you want to see these changes/workarounds
    e) Download the one that says for 5.4  
    f) Extract into `G1R\Plugins\` (or `Plugins` relative to this repo structure)  
 4. Build the UE game project  
+
+
+# Gothic 1 Remake native mods
+G1R comes with its own modloader and mod system but it is currentl not used. In order to package mod
+in compaible format you can use my [AlpakitSO](https://github.com/Kein/AlpakitSO)
+The only thing you will have to do manually is add gothic mod descriptor (documentation pending)
