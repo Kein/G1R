@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Alkimia Steam Extensions",
+	"Description": "Extensions to Unreal's Steam Platform Services",
+	"Category": "Alkimia",
+	"CreatedBy": "Alkimia Interactive",
+	"CreatedByURL": "https://alkimiainteractive.com/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "AlkimiaSteamExtensions",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [
+				"Win64",
+				"Mac",
+				"Linux"
+			]
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "SteamShared",
+			"Enabled": true
+		}
+	]
+}

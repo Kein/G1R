@@ -1,0 +1,31 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "BFG Lightweight Renderer",
+	"Description": "Plugin provides a mechanism to render a small set of objects with simple shaders.",
+	"Category": "Renderer",
+	"CreatedBy": "Black Forest Games GmbH",
+	"CreatedByURL": "https://black-forest-games.com/",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "BFGLightweightRenderer",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		}
+	],
+	"Plugins": [
+		{
+			"Name": "BFGMath",
+			"Enabled": true
+		}
+	]
+}

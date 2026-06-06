@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "AlkimiaDevConsole",
+	"Description": "Extended Unreal developer console",
+	"Category": "Other",
+	"CreatedBy": "Alkimia Interactive",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "AlkimiaDevConsole",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

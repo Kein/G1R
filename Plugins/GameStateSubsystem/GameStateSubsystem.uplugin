@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "",
+	"FriendlyName": "GameState Subsystems",
+	"Description": "Replicated Subsystems for Modular GameState.",
+	"Category": "Gameplay",
+	"CreatedBy": "Daft Software. (Modified by Alkimia Interactive)",
+	"CreatedByURL": "https://github.com/daftsoftware",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "GameStateSubsystem",
+			"Type": "Runtime",
+			"LoadingPhase": "PreDefault"
+		}
+	]
+}

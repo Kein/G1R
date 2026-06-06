@@ -1,0 +1,25 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "AlkimiaLightweightActors",
+	"Description": "Allows turning decorative-only static meshes into a smaller and more efficient representation to improve WorldPartition streaming speed.",
+	"Category": "Other",
+	"CreatedBy": "Alkimia Interactive",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"EnabledByDefault": true,
+	"CanContainContent": true,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": false,
+	"Modules": [
+		{
+			"Name": "AlkimiaLightweightActors",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}

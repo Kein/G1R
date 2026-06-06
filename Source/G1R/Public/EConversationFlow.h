@@ -1,0 +1,46 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "EConversationFlow.generated.h"
+
+UENUM(BlueprintType)
+enum class EConversationFlow : uint8 {
+    None,
+    PrepareRequestConversation_Begin,
+    PrepareRequestConversation_AlreadyInConversation,
+    RequestingConversation_Begin,
+    RequestingConversation_RequestFailed,
+    RequestingConversation_NothingToTalkAbout,
+    RequestingConversation_OtherExitedAfterJoining,
+    RequestingConversation_IdealTransformNotFound,
+    RequestingConversation_WaitingForPutAwayWeapon,
+    RespondingToRequest_OtherNotParticipating,
+    RespondingToRequest_GroupNotAvailable,
+    RespondingToRequest_NothingToTalkAbout,
+    RespondingToRequest_IdealTransformNotFound,
+    RespondingToRequest_OtherCharacterDespawned,
+    RespondingToRequest_IdealTransformAfterInteractionNotFound,
+    RespondingToRequest_ExitingOutOfInteractions,
+    RespondingToRequest_WaitingForNoLongerSpeaking,
+    RespondingToRequest_WaitingForPutAwayWeapon,
+    RespondingToRequest_Timeout,
+    GettingReady_GroupNotAvailable,
+    GettingReady_OtherNotParticipating,
+    GettingReady_WaitingForConversationAIState,
+    GettingReady_ExitingOutOfInteractions,
+    GettingReady_WaitingForBlockingAnimation,
+    GettingReady_MovingIntoPlace,
+    GettingReady_LoadingMorphTargets,
+    GettingReady_LoadingAssets,
+    GettingReady_WaitingForPutAwayWeapon,
+    WaitingForOthers_WaitingForAllOthers,
+    WaitingForOthers_OtherParticipantLeft,
+    WaitingForOthers_Timeout,
+    WaitingForOthers_NoGroup,
+    InConversation_GroupNotAvailable,
+    InConversation_LeftConversationAIState,
+    InConversation_AloneInConversation,
+    InConversation_AbilityEnded,
+    InConversation_Ongoing,
+    End_EndingAbility,
+};
+

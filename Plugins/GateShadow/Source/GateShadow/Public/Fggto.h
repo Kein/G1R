@@ -1,0 +1,58 @@
+#pragma once
+#include "CoreMinimal.h"
+#include "UObject/NoExportTypes.h"
+#include "UObject/NoExportTypes.h"
+#include "Engine/DataAsset.h"
+#include "GExpression.h"
+#include "JointExpressionRotations.h"
+#include "JointExpressionRotations_Packed.h"
+#include "Fggto.generated.h"
+
+class USkeleton;
+
+UCLASS(BlueprintType)
+class GATESHADOW_API UFggto : public UDataAsset {
+    GENERATED_BODY()
+public:
+    UPROPERTY(BlueprintReadOnly)
+    int32 NumExpressions;
+    
+    UPROPERTY(BlueprintReadOnly)
+    int32 NumJoints;
+    
+    UPROPERTY(EditAnywhere)
+    FFilePath RigPathGto;
+    
+    UPROPERTY(BlueprintReadOnly, EditAnywhere)
+    USkeleton* Skeleton;
+    
+    UPROPERTY()
+    FGExpression NeutralExpression;
+    
+    UPROPERTY()
+    TArray<FName> Curves;
+    
+    UPROPERTY()
+    TMap<FName, FGExpression> ExpressionsMap;
+    
+    UPROPERTY()
+    TMap<uint32, uint32> JointsMap;
+    
+    UPROPERTY()
+    TArray<FName> Joints;
+    
+    UPROPERTY()
+    TArray<FQuat> QuatNeutralRotationInverted;
+    
+private:
+    UPROPERTY()
+    TArray<FJointExpressionRotations> QuatExpressionRotation;
+    
+    UPROPERTY()
+    TArray<FJointExpressionRotations_Packed> QuatExpressionRotation_Packed;
+    
+public:
+    UFggto();
+
+};
+
