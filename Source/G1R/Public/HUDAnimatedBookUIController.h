@@ -36,7 +36,7 @@ protected:
     UWritingUIWidget* m_WritingUIWidget;
     
 public:
-    UPROPERTY(BlueprintCallable)
+    UPROPERTY(BlueprintAssignable, BlueprintCallable)
     FOnBookClosed m_OnBookClosed;
     
     UHUDAnimatedBookUIController();

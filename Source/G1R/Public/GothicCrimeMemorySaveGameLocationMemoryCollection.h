@@ -3,11 +3,11 @@
 #include "LocationMemoryCrimeDataEntry.h"
 #include "GothicCrimeMemorySaveGameLocationMemoryCollection.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FGothicCrimeMemorySaveGameLocationMemoryCollection {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TArray<FLocationMemoryCrimeDataEntry> LocationMemories;
     
     G1R_API FGothicCrimeMemorySaveGameLocationMemoryCollection();

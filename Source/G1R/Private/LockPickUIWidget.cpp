@@ -3,6 +3,7 @@
 
 ULockPickUIWidget::ULockPickUIWidget() {
     this->m_LockPickUIHint = ELockPickUIHint::None;
+    this->m_LockDifficulty = 0;
 }
 
 

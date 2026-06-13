@@ -47,5 +47,9 @@ private:
     UFUNCTION(BlueprintCallable)
     static FString GetBlueprintNameCinematicMain();
     
+public:
+    UFUNCTION(BlueprintCallable)
+    void ForceHiddenVisibility(bool IsVisible);
+    
 };
 

@@ -17,19 +17,19 @@ protected:
     UPROPERTY(EditAnywhere)
     FText ChapterFormatText;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(SaveGame, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     int32 Chapter;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TMap<FName, EDataLayerRuntimeState> StoryDataLayersState;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<UHUDNotificationWidgetBase> ChapterNotificationWidgetClass;
     
-    UPROPERTY(Config, EditAnywhere)
+    UPROPERTY(Config, EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool bShouldActivateStory;
     
-    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    UPROPERTY(Config, EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     float SortOrder;
     
 public:

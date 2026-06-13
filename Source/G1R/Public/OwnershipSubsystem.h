@@ -23,7 +23,7 @@ class G1R_API UOwnershipSubsystem : public UWorldSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TArray<UGuildAreaOwnershipModifier*> GuildAreaOwnershipModifiers;
     
 public:

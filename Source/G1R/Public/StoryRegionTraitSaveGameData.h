@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 #include "StoryRegionTraitSaveGameData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FStoryRegionTraitSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     int32 NumTimesToTrigger;
     
     G1R_API FStoryRegionTraitSaveGameData();

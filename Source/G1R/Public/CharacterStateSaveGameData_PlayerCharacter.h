@@ -2,7 +2,7 @@
 #include "CoreMinimal.h"
 #include "CharacterStateSaveGameData_PlayerCharacter.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_PlayerCharacter {
     GENERATED_BODY()
 public:

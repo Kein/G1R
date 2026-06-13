@@ -1,7 +1,6 @@
 #include "AbilityTask_UpdateRotationToTargetMeleeMagnet.h"
 
 UAbilityTask_UpdateRotationToTargetMeleeMagnet::UAbilityTask_UpdateRotationToTargetMeleeMagnet() {
-    this->m_MagnetTarget = NULL;
     this->m_MoveComp = NULL;
 }
 

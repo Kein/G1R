@@ -8,9 +8,11 @@
 #include "IKAnimInstanceBase.h"
 #include "BipedIKAnimInstance.generated.h"
 
+class AItemVisual;
 class AMeleeWeaponVisual;
 class UBipedIKConfig;
 class UCarryComponent;
+class UMeshComponent;
 
 UCLASS(NonTransient)
 class G1R_API UBipedIKAnimInstance : public UIKAnimInstanceBase {
@@ -82,6 +84,12 @@ protected:
     
     UPROPERTY(BlueprintReadOnly, EditAnywhere)
     float m_EnableHandIkR;
+    
+    UPROPERTY(Export)
+    TWeakObjectPtr<UMeshComponent> m_CurrentWeaponMesh;
+    
+    UPROPERTY()
+    AItemVisual* m_LastItemVisual;
     
     UPROPERTY(Instanced)
     UCarryComponent* m_CarryComponent;

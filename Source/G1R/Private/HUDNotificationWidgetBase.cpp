@@ -10,6 +10,7 @@ UHUDNotificationWidgetBase::UHUDNotificationWidgetBase() {
 }
 
 
+
 void UHUDNotificationWidgetBase::RequestShowInputHint(const FKey& _Key, FName _RequestIdentifier) {
 }
 

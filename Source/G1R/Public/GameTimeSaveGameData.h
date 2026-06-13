@@ -3,11 +3,11 @@
 #include "InGameTime.h"
 #include "GameTimeSaveGameData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FGameTimeSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FInGameTime CurrentTime;
     
     G1R_API FGameTimeSaveGameData();

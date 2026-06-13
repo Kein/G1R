@@ -93,6 +93,9 @@ public:
     bool IsAiming() const;
     
     UFUNCTION(BlueprintPure)
+    AArrowVisual* GetCurrentArrow() const;
+    
+    UFUNCTION(BlueprintPure)
     AArcheryWeaponVisual* GetBowOrCrossbowWeapon() const;
     
 protected:

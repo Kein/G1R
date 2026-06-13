@@ -7,6 +7,7 @@
 #include "StormOfFireVisual.generated.h"
 
 class AActor;
+class AGothicCharacter;
 class UAbilitySystemComponent;
 class UHitCapsuleCollisionComponent;
 class UPrimitiveComponent;
@@ -26,6 +27,14 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FVector m_Velocity;
     
+protected:
+    UPROPERTY()
+    TMap<AGothicCharacter*, FDateTime> m_Targets;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    float m_MinHitCooldownMilliseconds;
+    
+public:
     AStormOfFireVisual(const FObjectInitializer& ObjectInitializer);
 
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)

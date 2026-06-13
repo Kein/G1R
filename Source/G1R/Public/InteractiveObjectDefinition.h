@@ -74,6 +74,9 @@ public:
     bool m_ConsumeKeys;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_LockDifficulty;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EInteractiveCameraTarget m_CameraTarget;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)

@@ -16,13 +16,13 @@ class G1R_API UGameTimeSubsystem : public UTickableGameStateSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(Replicated)
+    UPROPERTY(Replicated, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FInGameTime CurrentGameTime;
     
-    UPROPERTY(Replicated)
+    UPROPERTY(Replicated, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     float GameTimeSpeed;
     
-    UPROPERTY(Instanced)
+    UPROPERTY(Instanced, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     UGameTimeSubsystemConfig* TimeConfig;
     
 public:

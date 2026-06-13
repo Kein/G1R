@@ -13,6 +13,7 @@ UInteractiveObjectDefinition::UInteractiveObjectDefinition() {
     this->m_OptionalObject = NULL;
     this->m_ShouldShowNameIngame = false;
     this->m_ConsumeKeys = false;
+    this->m_LockDifficulty = 0;
     this->m_CameraTarget = EInteractiveCameraTarget::Default;
     this->m_MustMove = false;
     this->m_StartBeforeRotation = false;

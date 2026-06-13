@@ -33,7 +33,7 @@ public:
 
 protected:
     UFUNCTION()
-    void UpdateRideableMotion(float DeltaTime);
+    void UpdateRideableMotion_ThreadSafe(float DeltaTime);
     
     UFUNCTION()
     void OnRidingStart(AGothicCharacter* mountCharacter);

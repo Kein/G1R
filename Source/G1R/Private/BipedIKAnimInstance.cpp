@@ -10,6 +10,7 @@ UBipedIKAnimInstance::UBipedIKAnimInstance() {
     this->m_EnableFootIkR = 1.00f;
     this->m_EnableHandIkL = 0.00f;
     this->m_EnableHandIkR = 0.00f;
+    this->m_LastItemVisual = NULL;
     this->m_CarryComponent = NULL;
     this->m_CurrentMeleeWeapon = NULL;
     this->m_IKConfig_Biped = NULL;

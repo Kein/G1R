@@ -3,11 +3,11 @@
 #include "AttributeSet.h"
 #include "CharacterStateSaveGameData_AttributeSet.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_AttributeSet {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FGameplayAttributeData> Attributes;
     
     G1R_API FCharacterStateSaveGameData_AttributeSet();

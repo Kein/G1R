@@ -11,4 +11,8 @@ bool UInteractiveObjectLibrary::DoesDoorExist(const UObject* WorldContextObject,
     return false;
 }
 
+bool UInteractiveObjectLibrary::CanDoorBeOpened(AActor* doorActor) {
+    return false;
+}
+
 

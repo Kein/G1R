@@ -61,6 +61,10 @@ bool UArcheryComponent::IsAiming() const {
     return false;
 }
 
+AArrowVisual* UArcheryComponent::GetCurrentArrow() const {
+    return NULL;
+}
+
 AArcheryWeaponVisual* UArcheryComponent::GetBowOrCrossbowWeapon() const {
     return NULL;
 }

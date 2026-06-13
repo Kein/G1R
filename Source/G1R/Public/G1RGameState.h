@@ -62,22 +62,22 @@ private:
     TArray<float> m_TempGenericDataFloat;
     
 public:
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TMap<FString, TSubclassOf<UItemDefinition>> m_ItemMapClasses;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TMap<FString, TSubclassOf<UTraderConfig>> m_TraderMapClasses;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TMap<FString, TSubclassOf<UGothicLockConfig>> m_LockMapClasses;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TMap<FGameplayTag, TSubclassOf<USpawnMeshes_AIAgent>> m_NpcSkelMeshesMapClasses;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TMap<FString, TSubclassOf<UInteractiveObjectDefinition>> m_InteractiveMapClasses;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly)
     TArray<FGameplayTagContainer> m_MagicCircles;
     
 private:
@@ -133,6 +133,12 @@ public:
     
     UFUNCTION()
     static bool DoesDoorExist(const UWorld* World, const FName& doorConfigName);
+    
+    UFUNCTION(BlueprintCallable)
+    static bool CanDoorBeOpenedWorld(AActor* doorActor);
+    
+    UFUNCTION()
+    bool CanDoorBeOpened(AActor* doorActor);
     
 };
 

@@ -7,6 +7,7 @@ class UAbilityTask_LockPick;
 class UAbilityTask_PlayMontage_Extended;
 class UAbilityTask_WaitDelay_Extended;
 class UAnimMontage;
+class UInteractSensor;
 
 UCLASS(Abstract)
 class G1R_API UGameplayAbilityOpen : public UGameplayAbilityBlockingInteraction {
@@ -34,6 +35,9 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_ConsumeKeys;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_LockDifficulty;
+    
     UPROPERTY()
     UAbilityTask_LockPick* m_LockPickTask;
     
@@ -48,6 +52,9 @@ protected:
     
     UPROPERTY()
     UAnimMontage* m_InteractiveObjectMontage;
+    
+    UPROPERTY(Export, Transient)
+    TWeakObjectPtr<UInteractSensor> m_CachedInteractSensor;
     
 public:
     UGameplayAbilityOpen();

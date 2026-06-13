@@ -3,11 +3,11 @@
 #include "CharacterStateSaveGameData_ActiveGameplayEffect.h"
 #include "CharacterStateSaveGameData_ActiveEffects.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_ActiveEffects {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TArray<FCharacterStateSaveGameData_ActiveGameplayEffect> ActiveEffects;
     
     G1R_API FCharacterStateSaveGameData_ActiveEffects();

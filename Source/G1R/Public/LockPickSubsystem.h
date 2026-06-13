@@ -14,23 +14,23 @@ class G1R_API ULockPickSubsystem : public UScriptWorldSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     AGothicLockSceneActor* m_LockSceneActor;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     AGothicLockPickActor* m_PendingLockPickActor;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<AGothicLockPieceActor*> m_PendingLockPieces;
     
     UPROPERTY(Instanced, Transient)
     UGothicLockCameraHelperComponent* m_PendingCameraHelper;
     
-    UPROPERTY(Transient)
+    UPROPERTY(Transient, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TSet<FName> m_UnlockedActors;
     
 private:
-    UPROPERTY(Instanced, Transient)
+    UPROPERTY(Instanced, Transient, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TMap<FName, UGothicLockConfig*> m_InstancedLocks;
     
 public:

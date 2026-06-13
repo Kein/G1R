@@ -2,11 +2,11 @@
 #include "CoreMinimal.h"
 #include "MainPlayerSaveGameData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FMainPlayerSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     int32 m_RandomNUmber;
     
     G1R_API FMainPlayerSaveGameData();

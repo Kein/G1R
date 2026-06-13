@@ -4,20 +4,20 @@
 #include "UObject/NoExportTypes.h"
 #include "CharacterStateSaveGameData_Position.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_Position {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FVector CharacterLocation;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FRotator CharacterRotation;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FVector SpawnLocation;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FRotator SpawnRotation;
     
     G1R_API FCharacterStateSaveGameData_Position();

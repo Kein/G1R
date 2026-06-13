@@ -64,6 +64,14 @@ bool AG1RGameState::DoesDoorExist(const UWorld* World, const FName& doorConfigNa
     return false;
 }
 
+bool AG1RGameState::CanDoorBeOpenedWorld(AActor* doorActor) {
+    return false;
+}
+
+bool AG1RGameState::CanDoorBeOpened(AActor* doorActor) {
+    return false;
+}
+
 void AG1RGameState::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const {
     Super::GetLifetimeReplicatedProps(OutLifetimeProps);
     

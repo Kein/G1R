@@ -9,6 +9,7 @@ AStormOfFireVisual::AStormOfFireVisual(const FObjectInitializer& ObjectInitializ
     this->RootComponent = CreateDefaultSubobject<USphereComponent>(TEXT("SphereComponent"));
     this->m_SphereComponent = (USphereComponent*)RootComponent;
     this->m_CollisionComp = CreateDefaultSubobject<UHitCapsuleCollisionComponent>(TEXT("HitCapsuleCollisionComponent"));
+    this->m_MinHitCooldownMilliseconds = 500.00f;
     this->m_CollisionComp->SetupAttachment(RootComponent);
 }
 

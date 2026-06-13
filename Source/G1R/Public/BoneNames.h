@@ -6,7 +6,7 @@ USTRUCT(BlueprintType)
 struct FBoneNames {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FName Root;
     
     UPROPERTY(EditAnywhere)

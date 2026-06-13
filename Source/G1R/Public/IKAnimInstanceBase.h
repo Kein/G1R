@@ -4,6 +4,7 @@
 #include "UObject/NoExportTypes.h"
 #include "GameplayTagContainer.h"
 #include "BaseGothicAnimInstance.h"
+#include "CacheProxyData.h"
 #include "IKAnimInstanceBase.generated.h"
 
 class AActor;
@@ -24,6 +25,9 @@ public:
     bool SwitchLookAt;
     
 protected:
+    UPROPERTY()
+    FCacheProxyData m_CachedLocomotionData;
+    
     UPROPERTY(Instanced)
     UIKConfig* m_IKConfig;
     

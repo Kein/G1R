@@ -8,6 +8,7 @@ AConcertStageManager::AConcertStageManager(const FObjectInitializer& ObjectIniti
     (*p_RemoteRole->ContainerPtrToValuePtr<TEnumAsByte<ENetRole>>(this)) = ROLE_SimulatedProxy;
     this->m_AudioTrack = NULL;
     this->m_WasPaused = false;
+    this->m_WaitingToResumeSequenceFromPause = false;
     this->m_ActivateSequenceOnLoad = false;
     this->m_ActivateAudioTrackOnLoad = false;
     this->m_IsAudioTrackSyncEnabled = true;

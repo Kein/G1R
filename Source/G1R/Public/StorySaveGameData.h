@@ -9,17 +9,17 @@
 class UGameStory;
 class URegionTrait;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FStorySaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<TSubclassOf<UGameStory>, FSingleStorySaveGameData> SaveDataByStoryClass;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FKnowledgeSet> CharacterKnowledgeByUniqueName;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<TSoftObjectPtr<URegionTrait>, FStoryRegionTraitSaveGameData> RegionTraits;
     
     G1R_API FStorySaveGameData();

@@ -7,23 +7,23 @@
 #include "CharacterStateSaveGameData_Party.h"
 #include "CharacterStateSaveGameData_AnyCharacterType.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_AnyCharacterType {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_Attributes> AttributesByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_LongTermMemory> LongTermMemoryByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_ActiveEffects> ActiveEffectsByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_Party> PartyInfoByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FGameplayTagContainer> LooseTagsByGlobalId;
     
     G1R_API FCharacterStateSaveGameData_AnyCharacterType();

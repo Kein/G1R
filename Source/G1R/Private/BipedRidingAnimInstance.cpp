@@ -3,7 +3,7 @@
 UBipedRidingAnimInstance::UBipedRidingAnimInstance() {
 }
 
-void UBipedRidingAnimInstance::UpdateRideableMotion(float DeltaTime) {
+void UBipedRidingAnimInstance::UpdateRideableMotion_ThreadSafe(float DeltaTime) {
 }
 
 void UBipedRidingAnimInstance::OnRidingStart(AGothicCharacter* mountCharacter) {

@@ -126,6 +126,9 @@ public:
     bool GetFirstItemWithType(FGameplayTag ItemType, TSubclassOf<UItemDefinition>& ItemDefinition, EInventoryTypes& InventoryType, int32& SlotId) const;
     
     UFUNCTION(BlueprintCallable)
+    void ConsumeItemOfTypeOnAnyInventory(TSubclassOf<UItemDefinition> ItemDefinition, int32 itemCount);
+    
+    UFUNCTION(BlueprintCallable)
     void ConsumeItemOfType(TSubclassOf<UItemDefinition> ItemDefinition, int32 itemCount, EInventoryTypes Inventory);
     
 };

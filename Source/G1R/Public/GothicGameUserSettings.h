@@ -620,6 +620,9 @@ public:
     void ApplyUpscalingSettings();
     
     UFUNCTION(BlueprintCallable)
+    void ApplySyncIntervalySettings();
+    
+    UFUNCTION(BlueprintCallable)
     void ApplyLatencySettings();
     
     UFUNCTION(BlueprintCallable, BlueprintPure=false)

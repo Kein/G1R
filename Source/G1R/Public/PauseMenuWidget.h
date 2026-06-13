@@ -13,7 +13,7 @@ class G1R_API UPauseMenuWidget : public UGothicCommonActivatableWidget {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadOnly, EditAnywhere, Instanced)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere, Instanced)
     UCommonButtonBase* QuitButton;
     
     UPROPERTY(EditAnywhere)
@@ -31,6 +31,9 @@ public:
 protected:
     UFUNCTION(BlueprintCallable)
     bool IsSavingEnabled();
+    
+    UFUNCTION(BlueprintCallable)
+    bool IsSaveFinished();
     
     UFUNCTION(BlueprintCallable)
     bool IsLoadingEnabled();

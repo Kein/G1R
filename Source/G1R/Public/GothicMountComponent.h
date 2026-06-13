@@ -32,6 +32,9 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TMap<FActiveGameplayEffectHandle, FGameplayEffectSpec> m_EffectsToRemoveOnUnmount;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    TArray<TSubclassOf<UGameplayEffect>> m_EnvironmentalGEToForceRemoveOnUnmount;
+    
     UPROPERTY()
     TWeakObjectPtr<AAIController> m_AIMountController;
     
@@ -49,6 +52,12 @@ protected:
     
     UPROPERTY()
     TMap<AGothicCharacter*, FGameplayEffectSpec> m_LastGameplayEffectSpecApplied;
+    
+    UPROPERTY()
+    TArray<FGameplayEffectSpec> m_MountEffectStack;
+    
+    UPROPERTY()
+    TArray<FGameplayEffectSpec> m_RiderEffectStack;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TSubclassOf<UScriptGameplayEffect> m_AlcoholEffect;

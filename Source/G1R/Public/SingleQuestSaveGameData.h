@@ -4,17 +4,17 @@
 #include "InGameTime.h"
 #include "SingleQuestSaveGameData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FSingleQuestSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     EQuestState CurrentState;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<EQuestState, FInGameTime> StateReachedAtTime;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FInGameTime> TimeLastViewedByPlayer;
     
     G1R_API FSingleQuestSaveGameData();

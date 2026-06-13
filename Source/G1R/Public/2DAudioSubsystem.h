@@ -35,7 +35,7 @@ public:
     void PlayChapterJingle(int32 Chapter);
     
     UFUNCTION(BlueprintCallable)
-    void Play2DAudioMovieClip(const FString& MovieClip);
+    void PlayBinkAudioTrack(const FString& MovieClip);
     
     UFUNCTION(BlueprintCallable)
     void Play2DAudioFromTextID(FText TextID, UFMODEvent* FMODEvent);
@@ -44,7 +44,7 @@ public:
     void Play2DAudioFromCutscene(const FString& MovieClip, ULevelSequenceDirector* Sequence);
     
     UFUNCTION()
-    void HandleCinematicStopped();
+    void HandleSequenceStopped();
     
 };
 

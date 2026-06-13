@@ -18,37 +18,37 @@ class G1R_API UDifficultyManagerSubsystem : public UScriptGameInstanceSubsystem 
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSubclassOf<UDifficultyPreset> m_currentPreset;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSubclassOf<UCombatDifficultySettings> m_customCombatSettings;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSubclassOf<UResourcesDifficultySettings> m_customResourcesSettings;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSubclassOf<UProgressionDifficultySettings> m_customProgressionSettings;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool m_SurvivalMode;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool m_PermanentDeathMode;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool m_FakeSloppyCombos;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UDifficultyPreset>> m_availablePresets;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UCombatDifficultySettings>> m_availableCombatSettings;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UResourcesDifficultySettings>> m_availableResourcesSettings;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TArray<TSubclassOf<UProgressionDifficultySettings>> m_availableProgressionSettings;
     
 public:
@@ -60,7 +60,7 @@ public:
     UFUNCTION(BlueprintCallable)
     void SetSurvivalModeState(bool Value);
     
-    UFUNCTION()
+    UFUNCTION(BlueprintCallable)
     void SetIsPermanentDeathMode(bool isPermanentDeathMode);
     
     UFUNCTION(BlueprintCallable)

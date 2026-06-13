@@ -104,6 +104,9 @@ public:
     TSoftObjectPtr<UFMODEvent> FMODEvent_Undead;
     
     UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    TSoftObjectPtr<UFMODEvent> FMODEvent_Demon;
+    
+    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
     FName PossessedIntensityParameter;
     
     UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)

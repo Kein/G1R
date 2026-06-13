@@ -11,31 +11,31 @@ USTRUCT(BlueprintType)
 struct FGameStateDataBaseSaveData {
     GENERATED_BODY()
 public:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FName> m_DoorsOpen;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FName> m_DoorsClosed;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<FName, float> m_GenericData;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FName> m_SavedDoorsMessagesName;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FGothicBasicVerbMessage> m_SavedDoorsMessagesStruct;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<FGuid, FGenericData> m_InteractiveData;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<FString, FReplicatedInventoryMap> m_SavedInventories;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FTraderData> m_Traders;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<FName, int32> m_CreatureKillCounterSaved;
     
     G1R_API FGameStateDataBaseSaveData();

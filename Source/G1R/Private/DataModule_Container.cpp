@@ -97,6 +97,9 @@ bool UDataModule_Container::GetFirstItemWithType(FGameplayTag ItemType, TSubclas
     return false;
 }
 
+void UDataModule_Container::ConsumeItemOfTypeOnAnyInventory(TSubclassOf<UItemDefinition> ItemDefinition, int32 itemCount) {
+}
+
 void UDataModule_Container::ConsumeItemOfType(TSubclassOf<UItemDefinition> ItemDefinition, int32 itemCount, EInventoryTypes Inventory) {
 }
 

@@ -9,6 +9,10 @@ bool UPauseMenuWidget::IsSavingEnabled() {
     return false;
 }
 
+bool UPauseMenuWidget::IsSaveFinished() {
+    return false;
+}
+
 bool UPauseMenuWidget::IsLoadingEnabled() {
     return false;
 }

@@ -6,7 +6,7 @@ UAbilityTask_LockPick::UAbilityTask_LockPick() {
 void UAbilityTask_LockPick::UpPressed() {
 }
 
-UAbilityTask_LockPick* UAbilityTask_LockPick::TryOpenLock(UGameplayAbility* OwningAbility, const FName& Lock, const TArray<FName>& Keys, const FName& InteractiveObjectActorName, const TArray<FName>& PuzzleKeys, const bool ConsumeKeys) {
+UAbilityTask_LockPick* UAbilityTask_LockPick::TryOpenLock(UGameplayAbility* OwningAbility, const FName& Lock, const TArray<FName>& Keys, const FName& InteractiveObjectActorName, const TArray<FName>& PuzzleKeys, const bool ConsumeKeys, const int32 LockDifficulty) {
     return NULL;
 }
 

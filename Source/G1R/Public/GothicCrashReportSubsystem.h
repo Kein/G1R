@@ -5,7 +5,7 @@
 #include "SentryReportData.h"
 #include "GothicCrashReportSubsystem.generated.h"
 
-UCLASS()
+UCLASS(Config=Game)
 class G1R_API UGothicCrashReportSubsystem : public UEngineSubsystem {
     GENERATED_BODY()
 public:
@@ -14,6 +14,12 @@ public:
     
     UPROPERTY()
     FGothicCrashInfoFile SentryFile;
+    
+    UPROPERTY(Config)
+    FString SentryReleaseName;
+    
+    UPROPERTY(Config)
+    FString SentryReleaseVersion;
     
     UGothicCrashReportSubsystem();
 

@@ -18,6 +18,9 @@ public:
     UPROPERTY(BlueprintReadOnly)
     bool bHasVoiceOver;
     
+    UPROPERTY(BlueprintReadOnly)
+    int32 BinkAudioTrack;
+    
     ALKIMIASTORYFILEIMPORT_API FAlkimiaLanguageSet();
 };
 

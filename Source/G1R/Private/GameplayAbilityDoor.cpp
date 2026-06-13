@@ -12,6 +12,7 @@ UGameplayAbilityDoor::UGameplayAbilityDoor() {
     this->m_LockpickingInteractionTaskClass = NULL;
     this->m_LockpickingInteractionTask = NULL;
     this->m_ConsumeKeys = false;
+    this->m_LockDifficulty = 0;
 }
 
 void UGameplayAbilityDoor::SuccessLockEvent() {

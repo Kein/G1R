@@ -13,19 +13,19 @@ class G1R_API UQuestSubsystem : public UTickableGameStateSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TMap<TSubclassOf<UQuest>, UQuest*> AllQuests;
     
-    UPROPERTY(ReplicatedUsing=OnRep_AllQuestInstances)
+    UPROPERTY(ReplicatedUsing=OnRep_AllQuestInstances, BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UQuest*> AllQuestInstances;
     
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UQuest*> TickingQuestsWhenInStateNone;
     
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UQuest*> TickingQuestsWhenInStateRunning;
     
-    UPROPERTY(BlueprintReadOnly)
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UQuest*> TickingQuestsWhenInStateAvailable;
     
 public:

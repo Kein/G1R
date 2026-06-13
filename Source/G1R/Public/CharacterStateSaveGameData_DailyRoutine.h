@@ -8,20 +8,20 @@
 
 class UAIState_DailyRoutine;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_DailyRoutine {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TSubclassOf<UAIState_DailyRoutine> DailyRoutineClass;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FInGameTime AssignedAt;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FVector LocationWhenStartedRoutine;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FInteractionSpotHandle UsedSpot;
     
     G1R_API FCharacterStateSaveGameData_DailyRoutine();

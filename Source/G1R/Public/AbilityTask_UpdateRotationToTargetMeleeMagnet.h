@@ -15,8 +15,8 @@ class G1R_API UAbilityTask_UpdateRotationToTargetMeleeMagnet : public UAbilityTa
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY(Instanced)
-    USceneComponent* m_MagnetTarget;
+    UPROPERTY(Export)
+    TWeakObjectPtr<USceneComponent> m_MagnetTarget;
     
     UPROPERTY(Instanced)
     UGothicMovementComponent* m_MoveComp;

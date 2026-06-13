@@ -42,7 +42,7 @@ public:
     void UpPressed();
     
     UFUNCTION(BlueprintCallable)
-    static UAbilityTask_LockPick* TryOpenLock(UGameplayAbility* OwningAbility, const FName& Lock, const TArray<FName>& Keys, const FName& InteractiveObjectActorName, const TArray<FName>& PuzzleKeys, const bool ConsumeKeys);
+    static UAbilityTask_LockPick* TryOpenLock(UGameplayAbility* OwningAbility, const FName& Lock, const TArray<FName>& Keys, const FName& InteractiveObjectActorName, const TArray<FName>& PuzzleKeys, const bool ConsumeKeys, const int32 LockDifficulty);
     
     UFUNCTION()
     void RightPressed();

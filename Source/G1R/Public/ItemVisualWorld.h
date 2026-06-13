@@ -37,10 +37,10 @@ public:
     UPROPERTY(BlueprintAssignable)
     FOnProjectileStop OnProjectileStopDelegate;
     
-protected:
     UPROPERTY(BlueprintReadWrite, EditInstanceOnly)
     int32 m_ItemCount;
     
+protected:
     UPROPERTY(Transient, ReplicatedUsing=OnRep_WorldItemDefinition)
     FReplicatedWorldData m_ReplicatedWorldData;
     

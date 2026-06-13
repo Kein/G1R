@@ -28,22 +28,22 @@ class G1R_API UPerceptionSystem : public UTickableGameStateSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FPerceptionSystemWorld PerceptionWorld;
     
-    UPROPERTY(Config)
+    UPROPERTY(Config, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool bSingleThreadedGather;
     
-    UPROPERTY(Config)
+    UPROPERTY(Config, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     bool bShowSightPerceptions;
     
-    UPROPERTY(Config)
+    UPROPERTY(Config, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     TSoftClassPtr<UPerceptionAgentSettings> DefaultAgentSettingsClass;
     
-    UPROPERTY(Config)
+    UPROPERTY(Config, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer SubscribedEventTags;
     
-    UPROPERTY(Config)
+    UPROPERTY(Config, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FGameplayTagContainer AgentTagWhitelist;
     
 public:

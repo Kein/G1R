@@ -10,13 +10,13 @@ USTRUCT(BlueprintType)
 struct FGothicCrimeMemorySaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TArray<FGlobalCrimeDataEntry> GlobalCrimeDataEntries;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FGothicCrimeMemorySaveGameRelativeCrimeCollection> RelativeCrimeDataEntries;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FGameplayTag, FGothicCrimeMemorySaveGameLocationMemoryCollection> LocationCrimeDataEntries;
     
     G1R_API FGothicCrimeMemorySaveGameData();

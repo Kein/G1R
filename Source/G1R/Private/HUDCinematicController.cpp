@@ -22,4 +22,7 @@ FString UHUDCinematicController::GetBlueprintNameCinematicMain() {
     return TEXT("");
 }
 
+void UHUDCinematicController::ForceHiddenVisibility(bool IsVisible) {
+}
+
 

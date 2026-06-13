@@ -29,19 +29,19 @@ protected:
     UPROPERTY(BlueprintReadOnly)
     AInteractiveObjectActor* m_InteractiveActor;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TMap<FName, int32> m_LocalPuzzlePositions;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     EDoorModel m_Model;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FGameplayMessageListenerHandle> m_Listeners;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<FName, int32> m_UserIdStep;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     FName m_InternalDoorName;
     
 public:

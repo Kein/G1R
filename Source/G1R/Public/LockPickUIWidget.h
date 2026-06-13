@@ -40,6 +40,9 @@ protected:
     UPROPERTY(BlueprintAssignable, BlueprintCallable)
     FOnFadedOut m_OnFadedOut;
     
+    UPROPERTY(BlueprintReadOnly)
+    int32 m_LockDifficulty;
+    
 public:
     ULockPickUIWidget();
 

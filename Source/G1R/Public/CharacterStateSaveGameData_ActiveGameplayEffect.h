@@ -4,14 +4,14 @@
 #include "GameplayTagContainer.h"
 #include "CharacterStateSaveGameData_ActiveGameplayEffect.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_ActiveGameplayEffect {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FGameplayEffectSpec EffectSpec;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FGameplayTag, float> SetByCallerTagMagnitudes;
     
     G1R_API FCharacterStateSaveGameData_ActiveGameplayEffect();

@@ -54,6 +54,9 @@ protected:
     UPROPERTY(EditAnywhere, Replicated)
     bool m_ForceDisableInteraction;
     
+    UPROPERTY(EditAnywhere, Replicated)
+    bool m_ForceDisableUI;
+    
     UPROPERTY(Instanced)
     UFireVisualComponent* m_FireVisualComponent;
     
@@ -92,6 +95,9 @@ public:
     void SetIsBeingUsed(bool Value);
     
     UFUNCTION(BlueprintCallable)
+    void SetForceDisableUI(bool Value);
+    
+    UFUNCTION(BlueprintCallable)
     void SetForceDisableInteraction(bool Value);
     
     UFUNCTION(BlueprintCallable)
@@ -126,6 +132,9 @@ public:
     
     UFUNCTION(BlueprintCallable)
     bool GetIsBeingUsed();
+    
+    UFUNCTION(BlueprintPure)
+    bool GetForceDisableUI() const;
     
     UFUNCTION(BlueprintPure)
     bool GetForceDisableInteraction() const;

@@ -13,28 +13,28 @@ USTRUCT(BlueprintType)
 struct G1R_API FDroppedItem {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TSubclassOf<UItemDefinition> m_Definition;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     int32 m_Num;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FVector m_Origin;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FQuat m_Rot;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FItemPayload m_Payload;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FReplicatedStringMap m_GenericData;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_IsDynamic;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_Switch;
     
     FDroppedItem();

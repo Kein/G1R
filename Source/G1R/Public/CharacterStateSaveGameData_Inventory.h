@@ -3,7 +3,7 @@
 #include "ReplicatedInventoryMap.h"
 #include "CharacterStateSaveGameData_Inventory.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_Inventory {
     GENERATED_BODY()
 public:

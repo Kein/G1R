@@ -6,17 +6,17 @@
 class AGothicCharacter;
 class UCharacterConfig;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_NPCSpawnInfo {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TSubclassOf<UCharacterConfig> CharacterConfig;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TSoftClassPtr<AGothicCharacter> VisualCharacterClass;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FName SummonedBy;
     
     G1R_API FCharacterStateSaveGameData_NPCSpawnInfo();

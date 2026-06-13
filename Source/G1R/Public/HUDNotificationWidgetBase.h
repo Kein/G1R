@@ -6,6 +6,7 @@
 #include "EHUDNotificationGroup.h"
 #include "EHUDNotificationImportance.h"
 #include "EHUDNotificationVisibilityState.h"
+#include "HUDNotificationWidget_AnimationData.h"
 #include "HUDNotificationWidgetBase.generated.h"
 
 class UInputHintWidget;
@@ -33,6 +34,9 @@ protected:
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)
     bool m_AllowedDuringLooting;
     
+    UPROPERTY(Transient)
+    TArray<FHUDNotificationWidget_AnimationData> m_ActiveAnimations;
+    
 public:
     UHUDNotificationWidgetBase();
 
@@ -40,6 +44,9 @@ public:
     void SetData(FInstancedStruct _Data);
     
 protected:
+    UFUNCTION(BlueprintImplementableEvent)
+    void ResetAnimations();
+    
     UFUNCTION(BlueprintCallable)
     void RequestShowInputHint(const FKey& _Key, FName _RequestIdentifier);
     

@@ -13,6 +13,8 @@ UCharacterVisualsComponent::UCharacterVisualsComponent(const FObjectInitializer&
     this->m_charDef = NULL;
     this->m_currentVisualsDefinition = NULL;
     this->VisualFeaturesDefinition = NULL;
+    this->m_MagicIndex = 0;
+    this->m_ProgressSteps = 0;
 }
 
 void UCharacterVisualsComponent::StaticCustomizableObjectInit(AActor* Owner, UCustomizableObjectInstance* CustomizableObjectInstance, const UCharacterDefinition* CharacterDefinition, UArmorVisualsDefinition* amorVisualDefinition) {
@@ -31,6 +33,9 @@ void UCharacterVisualsComponent::SetPreviewArmor(TSubclassOf<UItemDefinition> it
 }
 
 void UCharacterVisualsComponent::SetNewArmor(TSubclassOf<UItemDefinition> itemDef, bool IsPreview) {
+}
+
+void UCharacterVisualsComponent::SetCurrentStep(int32 Index) {
 }
 
 void UCharacterVisualsComponent::ServerNotifyArmorChanged_Implementation(TSubclassOf<UItemDefinition> itemDef) {
@@ -61,6 +66,10 @@ void UCharacterVisualsComponent::OnCustomMeshUpdated() {
 }
 
 void UCharacterVisualsComponent::OnCustomizableObjectLoaded() {
+}
+
+bool UCharacterVisualsComponent::IsCurrentStepCompletedAt(int32 Index) {
+    return false;
 }
 
 FString UCharacterVisualsComponent::GetDefinitionPrebakedSKNameIfUsed(const TSubclassOf<UArmorVisualsDefinition> ArmorVisualDef) {

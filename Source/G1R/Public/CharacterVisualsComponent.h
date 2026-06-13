@@ -106,6 +106,12 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     UCharacterVisualFeaturesDefinition* VisualFeaturesDefinition;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_MagicIndex;
+    
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_ProgressSteps;
+    
     UCharacterVisualsComponent(const FObjectInitializer& ObjectInitializer);
 
     virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty>& OutLifetimeProps) const override;
@@ -129,6 +135,9 @@ public:
     
     UFUNCTION()
     void SetNewArmor(TSubclassOf<UItemDefinition> itemDef, bool IsPreview);
+    
+    UFUNCTION(BlueprintCallable)
+    void SetCurrentStep(int32 Index);
     
     UFUNCTION(Reliable, Server)
     void ServerNotifyArmorChanged(TSubclassOf<UItemDefinition> itemDef);
@@ -163,6 +172,9 @@ public:
     
     UFUNCTION()
     void OnCustomizableObjectLoaded();
+    
+    UFUNCTION(BlueprintCallable)
+    bool IsCurrentStepCompletedAt(int32 Index);
     
     UFUNCTION()
     static FString GetDefinitionPrebakedSKNameIfUsed(const TSubclassOf<UArmorVisualsDefinition> ArmorVisualDef);

@@ -526,6 +526,9 @@ void UGothicGameUserSettings::DoInitialSetup(int32 _BenchmarkWorkScale, float _B
 void UGothicGameUserSettings::ApplyUpscalingSettings() {
 }
 
+void UGothicGameUserSettings::ApplySyncIntervalySettings() {
+}
+
 void UGothicGameUserSettings::ApplyLatencySettings() {
 }
 

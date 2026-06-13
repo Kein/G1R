@@ -418,6 +418,9 @@ public:
     UPROPERTY(BlueprintReadOnly, Instanced)
     ULocomotionSequencesData* m_LocomotionSequencesData;
     
+    UPROPERTY()
+    FCacheProxyData m_CachedLocomotionData;
+    
 protected:
     UPROPERTY()
     UDataModule_Locomotion* m_DataModule_Locomotion;
@@ -439,9 +442,6 @@ protected:
     
     UPROPERTY(Instanced)
     UGothicAnimationComponent* m_GothicAnimationComponent;
-    
-    UPROPERTY()
-    FCacheProxyData m_CachedLocomotionData;
     
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_UseLinkedLayers;

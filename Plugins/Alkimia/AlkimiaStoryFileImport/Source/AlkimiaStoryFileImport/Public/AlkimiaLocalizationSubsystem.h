@@ -31,6 +31,9 @@ protected:
     TArray<FName> AlwaysPrependToLanguageSet;
     
     UPROPERTY(Config)
+    TArray<FName> AlwaysAppendToLanguageSet;
+    
+    UPROPERTY(Config)
     FName ActiveDisplayLanguageSet;
     
     UPROPERTY(Config)

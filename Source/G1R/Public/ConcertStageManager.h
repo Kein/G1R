@@ -24,6 +24,9 @@ public:
     bool m_WasPaused;
     
     UPROPERTY()
+    bool m_WaitingToResumeSequenceFromPause;
+    
+    UPROPERTY()
     bool m_ActivateSequenceOnLoad;
     
     UPROPERTY()

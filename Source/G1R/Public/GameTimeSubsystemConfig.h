@@ -4,20 +4,21 @@
 #include "InGameTime.h"
 #include "GameTimeSubsystemConfig.generated.h"
 
-UCLASS(Const, EditInlineNew, Config=Game)
+//FIXME UCLASS(Const, EditInlineNew, Config=Game)
+UCLASS(EditInlineNew, Config=Game)
 class G1R_API UGameTimeSubsystemConfig : public UGothicBaseConfig {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     float GameTimeSpeed;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FInGameTime StartTime;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FInGameTime StartTimeVariance;
     
-    UPROPERTY(Config, EditAnywhere)
+    UPROPERTY(Config, EditAnywhere, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     float DemoTimerDurationSeconds;
     
     UGameTimeSubsystemConfig();

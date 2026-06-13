@@ -8,4 +8,7 @@ UGameplayAbilityMining::UGameplayAbilityMining() {
     this->m_InteractionActor = NULL;
 }
 
+void UGameplayAbilityMining::Server_OnCloseRequested_Implementation() {
+}
+
 

@@ -8,29 +8,29 @@
 #include "CharacterStateSaveGameData_Relationship.h"
 #include "CharacterStateSaveGameData_NPCCharacter.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_NPCCharacter {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_NPCSpawnInfo> SpawnInfoByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_Position> PositionByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_DailyRoutine> DailyRoutineByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_Inventory> InventoryByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_Relationship> RelationshipByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, FCharacterStateSaveGameData_AIValueStorage> AIValueStorageByGlobalId;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TSet<FName> GlobalIDsRemovedFromWorld;
     
     G1R_API FCharacterStateSaveGameData_NPCCharacter();

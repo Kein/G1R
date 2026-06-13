@@ -18,10 +18,10 @@ class G1R_API URelationshipSystem : public UTickableWorldSubsystem {
     GENERATED_BODY()
 public:
 protected:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UPersonalRelationshipModifier*> PersonalRelationshipModifiers;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadOnly, meta=(AllowPrivateAccess=true))
     TArray<UStaticRelationshipModifier*> StaticRelationshipModifiers;
     
 public:

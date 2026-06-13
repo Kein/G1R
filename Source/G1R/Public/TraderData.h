@@ -11,22 +11,22 @@ USTRUCT(BlueprintType)
 struct FTraderData {
     GENERATED_BODY()
 public:
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     FName m_TradersUniqueName;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<TSubclassOf<UItemDefinition>, int32> m_Items;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TMap<TSubclassOf<UItemDefinition>, int32> m_DefaultItems;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     TArray<FString> m_GeneratedEvents;
     
     UPROPERTY(BlueprintReadWrite)
     TMap<TSubclassOf<UDifficultySettings>, FInventoryByChapter> m_ItemsByDifficulty;
     
-    UPROPERTY()
+    UPROPERTY(BlueprintReadWrite)
     double m_TotalSeconds;
     
     G1R_API FTraderData();

@@ -24,5 +24,9 @@ protected:
 public:
     UGameplayAbilityMining();
 
+protected:
+    UFUNCTION(Reliable, Server)
+    void Server_OnCloseRequested();
+    
 };
 

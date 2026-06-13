@@ -32,47 +32,47 @@ public:
     FUIViewStateChanged OnUIViewStateChanged;
     
 protected:
-    UPROPERTY(Replicated, SaveGame)
+    UPROPERTY(Replicated, SaveGame, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     EQuestState State;
     
-    UPROPERTY(SaveGame, ReplicatedUsing=OnRep_StateReachedAtTime)
+    UPROPERTY(SaveGame, ReplicatedUsing=OnRep_StateReachedAtTime, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FReplicatedQuestStateTimeMap StateReachedAtTime;
     
-    UPROPERTY(ReplicatedUsing=OnRep_TimeLastViewedByPlayer)
+    UPROPERTY(ReplicatedUsing=OnRep_TimeLastViewedByPlayer, BlueprintReadWrite, meta=(AllowPrivateAccess=true))
     FReplicatedQuestNameTimeMap TimeLastViewedByPlayer;
     
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSubclassOf<UGameStory> BelongsToStory;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSubclassOf<UQuestline> Questline;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSubclassOf<UDocument> QuestlogDocumentClass;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FGameplayTagContainer PropertyTags;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TArray<FName> InvolvedCharacters;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bIsOptional;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bSucceedParent;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bExternalAvailabilityTrigger;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bExternalStartTrigger;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bExternalFailTrigger;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     bool bExternalSuccessTrigger;
     
     UPROPERTY(BlueprintAssignable)
@@ -90,25 +90,25 @@ public:
     UPROPERTY(BlueprintAssignable)
     FQuestStateChangedDelegate OnNotAvailableAnymore;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FText NameText;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FText DescriptionText;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSoftObjectPtr<UTexture2D> BannerImage;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     TSoftObjectPtr<UTexture2D> ThumbnailImage;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     int32 InChapter;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FName QuestGiverCharacterUniqueName;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     EQuestKind QuestKind;
     
     UPROPERTY(BlueprintReadOnly, EditDefaultsOnly)

@@ -6,11 +6,11 @@
 
 class UAttributeSet;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_Attributes {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<TSubclassOf<UAttributeSet>, FCharacterStateSaveGameData_AttributeSet> AttributeSetsByClass;
     
     G1R_API FCharacterStateSaveGameData_Attributes();

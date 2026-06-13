@@ -7,17 +7,17 @@
 
 class UQuest;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FSingleStorySaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, int32> StoryPropertyValues;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<FName, EDataLayerRuntimeState> StoryDataLayers;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     TMap<TSubclassOf<UQuest>, FSingleQuestSaveGameData> QuestDataByClass;
     
     G1R_API FSingleStorySaveGameData();

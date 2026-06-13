@@ -61,6 +61,9 @@ protected:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_ConsumeKeys;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_LockDifficulty;
+    
     UPROPERTY(EditAnywhere)
     FName m_SendTrigger;
     

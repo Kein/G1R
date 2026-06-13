@@ -11,6 +11,7 @@ UInteractiveComponent::UInteractiveComponent(const FObjectInitializer& ObjectIni
     this->m_CanBeUsed = true;
     this->m_DontPlayNotification = true;
     this->m_ForceDisableInteraction = false;
+    this->m_ForceDisableUI = false;
     this->m_FireVisualComponent = NULL;
     this->m_DoorComponent = NULL;
     this->bCreateInteractionSpots = true;
@@ -21,6 +22,9 @@ void UInteractiveComponent::SetUsed(bool Value) {
 }
 
 void UInteractiveComponent::SetIsBeingUsed(bool Value) {
+}
+
+void UInteractiveComponent::SetForceDisableUI(bool Value) {
 }
 
 void UInteractiveComponent::SetForceDisableInteraction(bool Value) {
@@ -68,6 +72,10 @@ bool UInteractiveComponent::GetIsBeingUsed() {
     return false;
 }
 
+bool UInteractiveComponent::GetForceDisableUI() const {
+    return false;
+}
+
 bool UInteractiveComponent::GetForceDisableInteraction() const {
     return false;
 }
@@ -109,6 +117,7 @@ void UInteractiveComponent::GetLifetimeReplicatedProps(TArray<FLifetimeProperty>
     DOREPLIFETIME(UInteractiveComponent, m_CanBeUsed);
     DOREPLIFETIME(UInteractiveComponent, m_DontPlayNotification);
     DOREPLIFETIME(UInteractiveComponent, m_ForceDisableInteraction);
+    DOREPLIFETIME(UInteractiveComponent, m_ForceDisableUI);
     DOREPLIFETIME(UInteractiveComponent, m_ActorToInteract);
 }
 

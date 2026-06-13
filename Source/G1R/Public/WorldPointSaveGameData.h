@@ -2,26 +2,26 @@
 #include "CoreMinimal.h"
 #include "WorldPointSaveGameData.generated.h"
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FWorldPointSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     double m_CurrentSeconds;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     bool m_RegenItems;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     FName m_PointUniqueName;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TMap<int32, FName> m_EmptyCoordItem;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TArray<FName> m_EventsToCall;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
     TMap<int32, FName> m_Items;
     
     G1R_API FWorldPointSaveGameData();

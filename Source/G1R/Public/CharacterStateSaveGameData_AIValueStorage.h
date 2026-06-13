@@ -4,7 +4,7 @@
 
 class UAIValueSet;
 
-USTRUCT()
+USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData_AIValueStorage {
     GENERATED_BODY()
 public:

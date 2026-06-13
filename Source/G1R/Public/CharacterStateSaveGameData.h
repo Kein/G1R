@@ -10,16 +10,16 @@ USTRUCT(BlueprintType)
 struct FCharacterStateSaveGameData {
     GENERATED_BODY()
 public:
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FCharacterStateSaveGameData_AnyCharacterType AnyCharacterType;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FCharacterStateSaveGameData_NPCCharacter NPCCharacters;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     FCharacterStateSaveGameData_PlayerCharacter PlayerCharacters;
     
-    UPROPERTY(SaveGame)
+    UPROPERTY(BlueprintReadWrite, SaveGame)
     ECharacterStateGlobalIDFormat GlobalIDFormat;
     
     G1R_API FCharacterStateSaveGameData();

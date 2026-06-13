@@ -4,20 +4,20 @@
 #include "GameplayTagContainer.h"
 #include "GuildAreaOwnershipModifier.generated.h"
 
-UCLASS(Abstract, Blueprintable)
+UCLASS(Abstract, Blueprintable, BlueprintType)
 class G1R_API UGuildAreaOwnershipModifier : public UObject {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FGameplayTagContainer OwnedAreas;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FGameplayTagContainer Except;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FGameplayTagContainer ForGuild;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     float Weight;
     
     UGuildAreaOwnershipModifier();
