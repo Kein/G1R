@@ -8,7 +8,7 @@ were used. Source Engine changes will/*may* come later, for now just base projec
 For now, search for "FIXME" if you want to see these changes/workarounds
 
 # Usage and building
-0. It is assumed you have [UE5.4.3 AngelScript source and the UE build toolchain as well](https://github.com/Kein/UnrealEngine-Angelscript)  
+0. It is assumed you have [UE5.4.3 AngelScript source and the UE build toolchain as well](https://github.com/Hazelight/UnrealEngine-Angelscript) (rev: `3d21e34009e78e1d7bc5cab1a29b709814d1cefb`)
 1. Clone this project  
 2. Install FMODStudio 2.02.26 plugin for Unreal:  
    a) https://www.fmod.com/download  
