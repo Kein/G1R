@@ -23,10 +23,10 @@ protected:
     UAbilityTask_AlignCharacterAtLocation* m_TaskAlign;
     
     UPROPERTY()
-    AGothicCharacter* m_Character;
+    TWeakObjectPtr<AGothicCharacter> m_Character;
     
     UPROPERTY()
-    AClimbableWall* m_interactiveWallActor;
+    TWeakObjectPtr<AClimbableWall> m_interactiveWallActor;
     
     UPROPERTY()
     float m_maxTime;

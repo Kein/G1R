@@ -70,6 +70,7 @@ UGothicGameUserSettings::UGothicGameUserSettings() {
     this->CameraSensitivity_KBM = 1.00f;
     this->CameraSensitivity_Gamepad = 1.00f;
     this->MouseRetargetingSensitivity_KBM = 1.00f;
+    this->m_eConsoleQualityPerformanceMode = EGothicConsoleQualityPerformanceMode::Quality;
 }
 
 void UGothicGameUserSettings::SetWindQuality(int32 _WindQuality) {

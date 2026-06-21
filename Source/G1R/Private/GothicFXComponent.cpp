@@ -21,6 +21,10 @@ void UGothicFXComponent::SetPaused(FGothicFXInstanceHandle FXHandle, bool Paused
 void UGothicFXComponent::SetMaterialOverride(FGameplayTag Tag, UPhysicalMaterial* Material) {
 }
 
+FGothicFXInstanceHandle UGothicFXComponent::PlayEffectWithHitResult(const FGameplayTag& EffectTag, const FHitResult& HitResult, TSoftObjectPtr<UFMODEvent> SoundOverride) {
+    return FGothicFXInstanceHandle{};
+}
+
 FGothicFXInstanceHandle UGothicFXComponent::PlayEffect(const FGameplayTag& EffectTag, TSoftObjectPtr<UFMODEvent> SoundOverride) {
     return FGothicFXInstanceHandle{};
 }

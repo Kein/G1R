@@ -189,6 +189,9 @@ public:
     UGenericVoicelineComponent* GetVoiceline() const;
     
     UFUNCTION(BlueprintPure)
+    AGothicCharacterState* GetTransformationOwnerState() const;
+    
+    UFUNCTION(BlueprintPure)
     FGameplayTag GetSpecies() const;
     
     UFUNCTION(BlueprintPure)

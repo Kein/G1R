@@ -23,19 +23,16 @@ public:
     UPROPERTY()
     ULevelSequencePlayer* SequencePlayer;
     
-    UPROPERTY()
-    ULevelSequenceDirector* SequenceDirector;
-    
     U2DAudioSubsystem();
 
     UFUNCTION(BlueprintCallable)
     void PlayOneShot(TSoftObjectPtr<UFMODEvent> SoftEvent);
     
     UFUNCTION(BlueprintCallable)
-    void PlayChapterJingle(int32 Chapter);
+    void PlayCutsceneAudioTrack(const FString& MovieClip);
     
     UFUNCTION(BlueprintCallable)
-    void PlayBinkAudioTrack(const FString& MovieClip);
+    void PlayChapterJingle(int32 Chapter);
     
     UFUNCTION(BlueprintCallable)
     void Play2DAudioFromTextID(FText TextID, UFMODEvent* FMODEvent);

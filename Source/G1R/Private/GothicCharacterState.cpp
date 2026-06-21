@@ -128,6 +128,10 @@ UGenericVoicelineComponent* AGothicCharacterState::GetVoiceline() const {
     return NULL;
 }
 
+AGothicCharacterState* AGothicCharacterState::GetTransformationOwnerState() const {
+    return NULL;
+}
+
 FGameplayTag AGothicCharacterState::GetSpecies() const {
     return FGameplayTag{};
 }

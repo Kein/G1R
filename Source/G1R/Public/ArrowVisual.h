@@ -63,7 +63,7 @@ public:
     void BP_OnStartFlying();
     
     UFUNCTION(BlueprintImplementableEvent)
-    void BP_OnOverlapWater(const FVector& impactLocation, const FVector& ImpactNormal);
+    void BP_OnOverlapWater(const FHitResult& HitResult);
     
     UFUNCTION(BlueprintImplementableEvent)
     void BP_OnOverlap(const FVector& impactLocation, const FVector& ImpactNormal, const UG1RPhysicsMaterial* PhysicsMaterial);

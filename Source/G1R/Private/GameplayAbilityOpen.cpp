@@ -4,7 +4,7 @@ UGameplayAbilityOpen::UGameplayAbilityOpen() {
     this->ReplicationPolicy = EGameplayAbilityReplicationPolicy::ReplicateYes;
     this->InstancingPolicy = EGameplayAbilityInstancingPolicy::InstancedPerActor;
     this->m_ApplyCooldown = true;
-
+    this->m_ConsumeKeys = false;
     this->m_LockDifficulty = 0;
     this->m_LockPickTask = NULL;
     this->m_TaskCharMontage = NULL;

@@ -37,6 +37,9 @@ void UGameplayAbilityDrugDebuff::OnUpdateAbility_Scriptable_Implementation(float
 void UGameplayAbilityDrugDebuff::OnEndAbility_Scriptable_Implementation(const FGameplayAbilityActorInfo& GameplayAbilityActorInfo, bool WasCancelled) {
 }
 
+void UGameplayAbilityDrugDebuff::OnControllerChanged(APawn* Pawn, AController* OldController, AController* NewController) {
+}
+
 void UGameplayAbilityDrugDebuff::OnConsumeItem_Scriptable_Implementation(const FItemVirtualData& ItemVirtualData) {
 }
 

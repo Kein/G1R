@@ -34,6 +34,7 @@ UWorldDefinition::UWorldDefinition() {
     this->m_ReviveCounter = -1;
     this->m_DropForce = 15000.00f;
     this->m_MaxTorches = 5;
+    this->m_LockPickExp = 10;
 }
 
 

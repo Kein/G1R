@@ -5,8 +5,6 @@ UGameplayAbilityInteractWallClimb::UGameplayAbilityInteractWallClimb() {
     this->AbilityTriggers.AddDefaulted(1);
     this->m_TaskMoveTo = NULL;
     this->m_TaskAlign = NULL;
-    this->m_Character = NULL;
-    this->m_interactiveWallActor = NULL;
     this->m_maxTime = 4.00f;
 }
 

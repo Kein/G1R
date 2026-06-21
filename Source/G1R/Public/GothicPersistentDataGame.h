@@ -11,6 +11,9 @@ public:
     UPROPERTY()
     int32 m_SaveVersionNumber;
     
+    UPROPERTY()
+    int32 m_BuildChangelist;
+    
 private:
     UPROPERTY()
     FInstancedStruct m_Profile;

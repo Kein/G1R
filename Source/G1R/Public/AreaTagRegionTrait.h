@@ -13,10 +13,10 @@ UCLASS(EditInlineNew)
 class G1R_API UAreaTagRegionTrait : public URegionTrait {
     GENERATED_BODY()
 public:
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     FGameplayTag AreaName;
     
-    UPROPERTY(EditAnywhere)
+    UPROPERTY(EditAnywhere, BlueprintReadWrite)
     int32 Priority;
     
     UAreaTagRegionTrait();

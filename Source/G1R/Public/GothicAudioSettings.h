@@ -107,6 +107,18 @@ public:
     TSoftObjectPtr<UFMODEvent> FMODEvent_Demon;
     
     UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    TSoftObjectPtr<UFMODEvent> FMODEvent_Orc_Reaction;
+    
+    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    TSoftObjectPtr<UFMODEvent> FMODEvent_Orc_Mumble;
+    
+    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    TSoftObjectPtr<UFMODEvent> FMODEvent_Orc_Conversation;
+    
+    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
+    TMap<FString, TSoftObjectPtr<UFMODEvent>> VOEventsByName;
+    
+    UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)
     FName PossessedIntensityParameter;
     
     UPROPERTY(BlueprintReadOnly, Config, EditAnywhere)

@@ -30,6 +30,10 @@ private:
     UPROPERTY(Replicated)
     float m_AppearingTime;
     
+protected:
+    UPROPERTY(Replicated)
+    float m_CachedVanishingTime;
+    
 public:
     UGameplayAbilitySpellTeleport();
 

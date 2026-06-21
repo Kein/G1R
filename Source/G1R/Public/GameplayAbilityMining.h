@@ -4,7 +4,6 @@
 #include "GameplayAbilityBlockingInteraction.h"
 #include "GameplayAbilityMining.generated.h"
 
-class AActor;
 class UAbilityTask_PlayMontage_Extended;
 
 UCLASS()
@@ -14,9 +13,6 @@ public:
 protected:
     UPROPERTY()
     UAbilityTask_PlayMontage_Extended* m_CharMontageTask;
-    
-    UPROPERTY()
-    AActor* m_InteractionActor;
     
     UPROPERTY(Transient)
     FGameplayTag m_EventTag;

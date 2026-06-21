@@ -9,6 +9,8 @@
 #include "Templates/SubclassOf.h"
 #include "GameplayAbilityDrugDebuff.generated.h"
 
+class AController;
+class APawn;
 class UAbilityTask_PlayMontage_Extended;
 class UAngelscriptAttributeSet;
 class UAnimMontage;
@@ -102,6 +104,9 @@ public:
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnEndAbility_Scriptable(const FGameplayAbilityActorInfo& GameplayAbilityActorInfo, bool WasCancelled);
+    
+    UFUNCTION()
+    void OnControllerChanged(APawn* Pawn, AController* OldController, AController* NewController);
     
     UFUNCTION(BlueprintCallable, BlueprintNativeEvent)
     void OnConsumeItem_Scriptable(const FItemVirtualData& ItemVirtualData);

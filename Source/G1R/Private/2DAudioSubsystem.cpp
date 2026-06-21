@@ -5,16 +5,15 @@ U2DAudioSubsystem::U2DAudioSubsystem() {
     this->FMODUIEvent = NULL;
     this->CinematicFMODEvent = NULL;
     this->SequencePlayer = NULL;
-    this->SequenceDirector = NULL;
 }
 
 void U2DAudioSubsystem::PlayOneShot(TSoftObjectPtr<UFMODEvent> SoftEvent) {
 }
 
-void U2DAudioSubsystem::PlayChapterJingle(int32 Chapter) {
+void U2DAudioSubsystem::PlayCutsceneAudioTrack(const FString& MovieClip) {
 }
 
-void U2DAudioSubsystem::PlayBinkAudioTrack(const FString& MovieClip) {
+void U2DAudioSubsystem::PlayChapterJingle(int32 Chapter) {
 }
 
 void U2DAudioSubsystem::Play2DAudioFromTextID(FText TextID, UFMODEvent* FMODEvent) {

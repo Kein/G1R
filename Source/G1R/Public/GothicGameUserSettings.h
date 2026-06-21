@@ -3,6 +3,7 @@
 #include "UObject/NoExportTypes.h"
 #include "GameFramework/GameUserSettings.h"
 #include "EButtonGraphics.h"
+#include "EGothicConsoleQualityPerformanceMode.h"
 #include "SettingsAppliedDelegateDelegate.h"
 #include "GothicGameUserSettings.generated.h"
 
@@ -225,6 +226,9 @@ protected:
     
     UPROPERTY(Config, EditAnywhere)
     FVector2D MouseRetargetingSensitivityMargins_KBM;
+    
+    UPROPERTY(Config, EditAnywhere)
+    EGothicConsoleQualityPerformanceMode m_eConsoleQualityPerformanceMode;
     
 public:
     UGothicGameUserSettings();

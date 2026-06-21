@@ -40,6 +40,9 @@ public:
     void SetMaterialOverride(FGameplayTag Tag, UPhysicalMaterial* Material);
     
     UFUNCTION(BlueprintCallable)
+    FGothicFXInstanceHandle PlayEffectWithHitResult(const FGameplayTag& EffectTag, const FHitResult& HitResult, TSoftObjectPtr<UFMODEvent> SoundOverride);
+    
+    UFUNCTION(BlueprintCallable)
     FGothicFXInstanceHandle PlayEffect(const FGameplayTag& EffectTag, TSoftObjectPtr<UFMODEvent> SoundOverride);
     
     UFUNCTION()

@@ -44,6 +44,9 @@ public:
     UFUNCTION(BlueprintCallable)
     void CanSetOnFire(bool canSet);
     
+    UFUNCTION(BlueprintNativeEvent, BlueprintPure)
+    bool CanReceiveImpact() const;
+    
 
     // Fix for true pure virtual functions not being implemented
 };

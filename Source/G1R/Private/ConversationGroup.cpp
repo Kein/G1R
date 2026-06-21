@@ -77,6 +77,9 @@ FVector UConversationGroup::GetCenterOfConversation() const {
     return FVector{};
 }
 
+void UConversationGroup::ForceEndConversation() {
+}
+
 UConversationTopic* UConversationGroup::FindPotentialInitialForcedTopic(UGameplayAbility_AI* Other) {
     return NULL;
 }

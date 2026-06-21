@@ -7,6 +7,7 @@ UGameplayAbilitySpellTeleport::UGameplayAbilitySpellTeleport() {
     this->m_TeleportLocationActor = NULL;
     this->m_TeleportAppearingActor = NULL;
     this->m_AppearingTime = 0.00f;
+    this->m_CachedVanishingTime = 0.00f;
 }
 
 void UGameplayAbilitySpellTeleport::StartTeleportServer(AActor* teleportLocationActor) {
@@ -30,6 +31,7 @@ void UGameplayAbilitySpellTeleport::GetLifetimeReplicatedProps(TArray<FLifetimeP
     DOREPLIFETIME(UGameplayAbilitySpellTeleport, m_TeleportAppearingActor);
     DOREPLIFETIME(UGameplayAbilitySpellTeleport, m_CharactersAroundTeleportOrigin);
     DOREPLIFETIME(UGameplayAbilitySpellTeleport, m_AppearingTime);
+    DOREPLIFETIME(UGameplayAbilitySpellTeleport, m_CachedVanishingTime);
 }
 
 

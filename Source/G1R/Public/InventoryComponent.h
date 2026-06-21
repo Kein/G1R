@@ -179,6 +179,9 @@ public:
     bool AttachVisualItemOfKindWithoutAnimation(TSubclassOf<UItemDefinition> ItemKind, EVisualCarrySlot AttachTo);
     
     UFUNCTION(BlueprintCallable)
+    void AddItemOfClassInventory(TSubclassOf<UItemDefinition> ItemClass, int32 Count, const EInventoryTypes Inventory);
+    
+    UFUNCTION(BlueprintCallable)
     void AddItemOfClass(TSubclassOf<UItemDefinition> ItemClass, int32 Count);
     
 };

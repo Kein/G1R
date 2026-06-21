@@ -41,7 +41,7 @@ void UPersistentDataSubsystem::GetProfiles(TArray<FProfileData>& Profiles) {
 void UPersistentDataSubsystem::GetMostRecentSaveForProfile(int32 ProfileId, FSaveGamePublicData& SaveData) {
 }
 
-void UPersistentDataSubsystem::GetMostRecentSave(int32& ProfileId, FSaveGamePublicData& SaveData) {
+void UPersistentDataSubsystem::GetMostRecentSave(int32& ProfileId, FSaveGamePublicData& SaveData, bool filterOutPermanentDeathGameOver) {
 }
 
 float UPersistentDataSubsystem::GetMostRecentPlayTime() {

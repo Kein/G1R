@@ -166,6 +166,9 @@ public:
     UPROPERTY(BlueprintReadWrite, EditAnywhere)
     int32 m_MaxTorches;
     
+    UPROPERTY(BlueprintReadWrite, EditAnywhere)
+    int32 m_LockPickExp;
+    
     UPROPERTY()
     TMap<FGameplayTag, int32> m_ExperienceByStation;
     

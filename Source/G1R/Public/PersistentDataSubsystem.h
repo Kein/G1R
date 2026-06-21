@@ -124,7 +124,7 @@ public:
     void GetMostRecentSaveForProfile(int32 ProfileId, FSaveGamePublicData& SaveData);
     
     UFUNCTION()
-    void GetMostRecentSave(int32& ProfileId, FSaveGamePublicData& SaveData);
+    void GetMostRecentSave(int32& ProfileId, FSaveGamePublicData& SaveData, bool filterOutPermanentDeathGameOver);
     
     UFUNCTION(BlueprintCallable)
     float GetMostRecentPlayTime();

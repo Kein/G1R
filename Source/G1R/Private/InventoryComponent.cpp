@@ -205,6 +205,9 @@ bool UInventoryComponent::AttachVisualItemOfKindWithoutAnimation(TSubclassOf<UIt
     return false;
 }
 
+void UInventoryComponent::AddItemOfClassInventory(TSubclassOf<UItemDefinition> ItemClass, int32 Count, const EInventoryTypes Inventory) {
+}
+
 void UInventoryComponent::AddItemOfClass(TSubclassOf<UItemDefinition> ItemClass, int32 Count) {
 }
 

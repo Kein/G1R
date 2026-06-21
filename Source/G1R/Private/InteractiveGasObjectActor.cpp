@@ -25,4 +25,8 @@ UAbilitySystemComponent* AInteractiveGasObjectActor::GetAbilitySystemComponent()
 void AInteractiveGasObjectActor::CanSetOnFire(bool canSet) {
 }
 
+bool AInteractiveGasObjectActor::CanReceiveImpact_Implementation() const {
+    return false;
+}
+
 

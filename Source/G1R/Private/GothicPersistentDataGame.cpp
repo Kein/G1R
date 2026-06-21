@@ -2,6 +2,7 @@
 
 UGothicPersistentDataGame::UGothicPersistentDataGame() {
     this->m_SaveVersionNumber = -1;
+    this->m_BuildChangelist = -1;
 }
 
 bool UGothicPersistentDataGame::GetGenericData(const FString& idToSave, FInstancedStruct& dataToLoad) {

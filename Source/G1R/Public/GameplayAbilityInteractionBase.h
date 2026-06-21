@@ -17,7 +17,7 @@ protected:
     bool m_AbilityEnded;
     
     UPROPERTY(BlueprintReadOnly)
-    AActor* m_InteractiveActor;
+    TWeakObjectPtr<AActor> m_InteractiveActor;
     
     UPROPERTY(BlueprintReadOnly)
     FInteractionSpotHandle m_InteractionSpot;

@@ -3,8 +3,8 @@
 UCreditsParser::UCreditsParser() {
 }
 
-TArray<FCreditsSectionContent> UCreditsParser::GetCreditsContent(const FString& _FilePath) {
-    return TArray<FCreditsSectionContent>();
+TArray<UCreditsSection*> UCreditsParser::GetCreditsContent(UObject* _Owner, const FString& _FilePath) {
+    return TArray<UCreditsSection*>();
 }
 
 

@@ -116,6 +116,9 @@ public:
     FVector GetCenterOfConversation() const;
     
     UFUNCTION(BlueprintCallable)
+    void ForceEndConversation();
+    
+    UFUNCTION(BlueprintCallable)
     UConversationTopic* FindPotentialInitialForcedTopic(UGameplayAbility_AI* Other);
     
 };
