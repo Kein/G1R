@@ -8,16 +8,25 @@ were used. Source Engine changes will/*may* come later, for now just base projec
 For now, search for "FIXME" if you want to see these changes/workarounds
 
 # Usage and building
-0. It is assumed you have [UE5.4.3 AngelScript source](https://github.com/Hazelight/UnrealEngine-Angelscript) ((rev: `1318414eb930dd0fa9c22744f3efea55ac043790`) and the [UE build toolchain as well](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md) ( 14.36.32532 build tools and WinSDK 10.0.19041.0)
-1. Clone this project  
-2. Install FMODStudio 2.02.26 plugin for Unreal:  
+## Unreal Engine AS setup
+1. Fetch/clone AngelScript UE repo: https://github.com/Hazelight/UnrealEngine-Angelscript
+2. Switch to revision `1318414eb930dd0fa9c22744f3efea55ac043790`:
+   `git checkout 1318414eb930dd0fa9c22744f3efea55ac043790`
+3. Install UE build requirements as per [UE readme](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md) - you need built tools 14.36.32532 and WinSDK 10.0.19041.0
+4. Run `Setup.bat`
+5. Run `GenerateProjectFiles.bat`
+
+## G1R SDK project
+1. Clone this repo into Unreal Engine installation/repo folder (so it is near `Engine/`folder)
+2. Install FMODStudio 2.02.26 plugin for Unreal for G1R project:  
    a) https://www.fmod.com/download  
    b) Select FMOD for Unreal  
    c) Select 2.02  
    d) Select 2.02.26  
    e) Download the one that says for 5.4  
    f) Extract into `G1R\Plugins\` (or `Plugins` relative to this repo structure)  
-4. Build the UE game project  
+3. Run `GenerateProjectFiles.bat`
+4. Build UE and project with MSVC
 
 
 # Gothic 1 Remake native mods
