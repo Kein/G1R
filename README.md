@@ -12,7 +12,7 @@ For now, search for "FIXME" if you want to see these changes/workarounds
 1. Fetch/clone AngelScript UE repo: https://github.com/Hazelight/UnrealEngine-Angelscript
 2. Switch the cloned repo to revision `1318414eb930dd0fa9c22744f3efea55ac043790` or `3d21e34009e78e1d7bc5cab1a29b709814d1cefb`:  
    `git checkout 1318414eb930dd0fa9c22744f3efea55ac043790`
-3. Install UE build requirements as per [UE readme](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md) - you need built tools 14.36.32532 and WinSDK 10.0.19041.0
+3. Install UE build requirements as per [UE readme](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md) - you need build tools 14.36.32532 and WinSDK 10.0.19041.0 minimum
 4. Run `Setup.bat`
 5. Run `GenerateProjectFiles.bat`
 
