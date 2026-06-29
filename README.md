@@ -24,8 +24,8 @@ For now, search for "FIXME" if you want to see these changes/workarounds
    UE_54_AS\
    -- Engine\
    -- ...
-   -- Script-Examples
-   -- G1R
+   -- Script-Examples\
+   -- G1R\
    ```
 2. Install FMODStudio 2.02.26 plugin for Unreal for G1R project:  
    a) https://www.fmod.com/download  
