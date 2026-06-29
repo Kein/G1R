@@ -19,7 +19,14 @@ For now, search for "FIXME" if you want to see these changes/workarounds
 5. Run `GenerateProjectFiles.bat -currentplatform`
 
 ## G1R SDK project
-1. Clone this repo into Unreal Engine installation/repo folder (so it is near `Engine/`folder)
+1. Clone this repo into Unreal Engine installation/repo folder (so it is near `Engine/`folder):  
+   ```
+   UE_54_AS\
+   -- Engine\
+   -- ...
+   -- Script-Examples
+   -- G1R
+   ```
 2. Install FMODStudio 2.02.26 plugin for Unreal for G1R project:  
    a) https://www.fmod.com/download  
    b) Select FMOD for Unreal  
