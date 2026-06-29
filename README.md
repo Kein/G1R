@@ -9,12 +9,14 @@ For now, search for "FIXME" if you want to see these changes/workarounds
 
 # Usage and building
 ## Unreal Engine AS setup
-1. Fetch/clone AngelScript UE repo: https://github.com/Hazelight/UnrealEngine-Angelscript
+1. Fetch/clone [AngelScript UE repo](https://github.com/Hazelight/UnrealEngine-Angelscript):  
+   - `git clone --recursive https://github.com/Hazelight/UnrealEngine-Angelscript`
 2. Switch the cloned repo to revision `1318414eb930dd0fa9c22744f3efea55ac043790` or `3d21e34009e78e1d7bc5cab1a29b709814d1cefb`:  
-   `git checkout 1318414eb930dd0fa9c22744f3efea55ac043790`
-3. Install UE build requirements as per [UE readme](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md) - you need build tools 14.36.32532 and WinSDK 10.0.19041.0 minimum
+   - `git checkout 1318414eb930dd0fa9c22744f3efea55ac043790`
+3. Install UE build requirements as per [UE readme](https://github.com/EpicGames/UnrealEngine/blob/5.4.3-release/README.md)  
+   - you need build tools 14.36.32532 and WinSDK 10.0.19041.0 minimum
 4. Run `Setup.bat`
-5. Run `GenerateProjectFiles.bat`
+5. Run `GenerateProjectFiles.bat -currentplatform`
 
 ## G1R SDK project
 1. Clone this repo into Unreal Engine installation/repo folder (so it is near `Engine/`folder)
@@ -25,9 +27,9 @@ For now, search for "FIXME" if you want to see these changes/workarounds
    d) Select 2.02.26  
    e) Download the one that says for 5.4  
    f) Extract into `G1R\Plugins\` (or `Plugins` relative to this repo structure)  
-3. Run `GenerateProjectFiles.bat`
+3. Run `GenerateProjectFiles.bat -currentplatform`
 4. Build UE and project with MSVC
-
+5. Alternatively, see how to manually build UE with CLI: https://github.com/Kein/build_your_ue
 
 # Gothic 1 Remake native mods
 G1R comes with its own modloader and mod system but it is currentl not used. In order to package mod
